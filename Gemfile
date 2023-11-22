@@ -33,3 +33,5 @@ group :development do
   # gem "rack-mini-profiler"
   # gem "spring"
 end
+
+gem "simple_form", "~> 5.3"
