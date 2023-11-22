@@ -1,2 +1,11 @@
-<h1>Quotes#index</h1>
-<p>Find me in app/views/quotes/index.html.erb</p>
+<div class="bg-gray-300 rounded-lg py-3 px-6 grid grid-cols-2 gap-2">
+  <div class="text-lg py-1">
+    Quotes
+  </div>
+  <div class="flex justify-end">
+    <%= link_to "New quote", new_quote_path, class: "bg-slate-800 text-gray-200 px-4  text-sm rounded-md hover:opacity-75 flex items-center" %>
+  </div>
+</div>
+<div class="bg-gray-300 rounded-lg py-3 px-6 my-6 h-[80%]">
+  <%= render @quotes %>
+</div>
